@@ -1,0 +1,192 @@
+# Manual das Vozes Coisas de Cego
+
+Manual de uso, escrito pensando em acessibilidade para usuários cegos
+ou com baixa visão que usam o TalkBack.
+
+---
+
+# Atualizações
+
+## v1.1
+
+- **Nova voz: Daiane.** Agora são três vozes: Meriellen, Michel e Daiane.
+- **O app se atualiza sozinho.** Na tela do app, em Atualizações, o botão "Verificar
+  atualizações" procura a versão mais nova no GitHub, baixa e abre a instalação.
+  Uma vez por dia ele também procura sozinho e avisa por notificação (dá para
+  desligar). Quem está na versão 1.0 precisa instalar a 1.1 uma vez à mão.
+
+## v1.0
+
+Primeira versão. Duas vozes neurais, a do Michel e a da Meriellen (dona do projeto
+Coisas de Cego), offline, como motor de texto para fala do Android. Dá para trocar
+de voz na tela do app, e a troca vale na hora, sem reiniciar o leitor de telas.
+Tem ajustes de velocidade, tom e volume, cache de frases, leitura de emojis e
+dicionário de pronúncia.
+
+---
+
+# O que é
+
+O Vozes Coisas de Cego é uma voz para o Android. Depois de instalado e escolhido
+como mecanismo de texto para fala, o TalkBack e os outros leitores de tela passam
+a falar com a voz que você escolher no app. A fala roda toda no próprio celular, sem
+internet. A internet só é usada para procurar e baixar atualizações do app.
+
+As vozes falam português do Brasil. Também falam inglês, espanhol, francês e alemão.
+
+O APK tem cerca de 103 MB e funciona em celulares de 64 bits (arm64) com Android 8
+ou mais novo. Ele instala ao lado do Michel Henrique TTS, sem apagar nada dele:
+são dois apps diferentes, cada um com os seus próprios ajustes.
+
+# Instalar
+
+1. Baixe o APK e abra o arquivo.
+2. Se o Android pedir, permita instalar apps desta fonte.
+3. Se já tiver uma versão do Vozes Coisas de Cego, a nova instala por cima e os
+   seus ajustes ficam guardados.
+
+# Ativar como voz do celular
+
+1. Abra os Ajustes do Android.
+2. Procure por "Texto para fala" (em alguns celulares fica em Acessibilidade).
+3. Em "Mecanismo preferido", escolha **Vozes Coisas de Cego**.
+4. Toque no botão de reprodução da tela para ouvir a voz.
+
+# A tela de ajustes
+
+Abra o app "Vozes Coisas de Cego" no celular. De cima para baixo:
+
+## Voz
+
+- **Voz**: escolha entre **Meriellen** (a voz padrão), **Michel** e **Daiane**. Ao escolher, o app já
+  fala uma frase de apresentação com a voz nova.
+- A troca **vale na hora**. O TalkBack (ou qualquer leitor de telas que use este
+  mecanismo) passa a falar com a voz nova já na próxima frase. Não precisa reiniciar
+  o leitor de telas, nem o app, nem o celular.
+- Cada voz tem o seu próprio cache de frases. As frases comuns são preparadas para
+  a voz que estiver escolhida; depois de trocar, a nova voz vai preparando as dela
+  com o celular parado, e as frases que você usar vão sendo guardadas.
+
+## Ritmo e volume
+
+- **Velocidade** de 0,25x a 3x. 1,0x é o ritmo natural da voz.
+- **Tom** de 0,5x a 2x.
+- **Volume** de 0 a 200 por cento.
+- **Seguir a velocidade do Android e do TalkBack**: ligado, o que o Android e o
+  TalkBack pedem de velocidade multiplica o ajuste do app (o normal do Android é
+  100, e o TalkBack padrão manda 90). Desligado, só vale a velocidade do app, e os
+  gestos do TalkBack deixam de mudar a velocidade da voz.
+- **Seguir o tom do Android e do TalkBack**: a mesma ideia, para o tom.
+- **Cortar o silêncio do começo da fala**: tira um trecho quase mudo que a voz tem
+  no começo de cada frase, e responde um pouco mais rápido.
+- **Última fala**: mostra a voz usada, o que o Android pediu na última fala, quanto
+  tempo levou até o primeiro som, se a frase veio do cache e quantas vezes o áudio
+  falhou. Mostra também quantas das frases comuns já estão prontas no cache da voz
+  escolhida. É o que mandar quando for contar um problema.
+
+## Emojis
+
+- **Ler os emojis pelo nome**: troca cada emoji pelo nome em português antes de
+  falar. Por exemplo, 😀 vira "rosto risonho". Funcionam também emojis com tom de
+  pele, famílias, bandeiras e teclas numeradas.
+- **Emojis repetidos**: 😂😂😂 vira "rosto chorando de rir, três vezes".
+- Emoji muito novo, que não tenha nome, é pulado.
+- Alguns nomes oficiais são estranhos. Para trocar, use o dicionário de pronúncias (abaixo).
+
+## Pronúncia
+
+- **Corrigir pronúncia**: liga as regras do app. As vozes liam "imagens" como
+  "imaguens"; palavras com "gem" e "gens" depois de vogal agora saem com o som de
+  J. O nome RHVoice e as letras soltas (o TalkBack soletra) também têm regras.
+- **Dicionário de pronúncias**: na tela principal, toque em "Dicionário de pronúncias".
+  Lá dentro há o botão **Adicionar palavra** e a lista de todas as palavras já adicionadas.
+  - Em "Adicionar palavra" aparecem dois campos: **Palavra correta** (como a palavra é
+    escrita) e **Como a voz deve falar** (como você quer que ela seja pronunciada, com
+    acento onde ajudar), e os botões **Cancelar** e **OK**.
+  - Tocando numa palavra da lista aparecem as opções **Editar** e **Remover**.
+  - Vale para a palavra inteira, sem diferença de maiúsculas, e a mudança vale já na
+    próxima fala. Exemplo: palavra "mega", como falar "méga".
+  - Se você adicionar uma palavra que já existe, a pronúncia dela é trocada.
+
+## Cache
+
+- **Preparar frases comuns em segundo plano**: com o celular parado, o app gera
+  cerca de 200 frases que o leitor de telas fala toda hora (Botão, Voltar, Toque
+  duas vezes para ativar, letras, símbolos, menus). Cada frase falada também fica
+  guardada. Quando a mesma frase volta, ela toca na hora, sem esperar o motor.
+- O cache é separado por voz: o áudio de uma voz nunca toca com a outra.
+- **Preparar as frases comuns agora**: em vez de esperar o celular ficar parado, gera
+  de uma vez as frases comuns da voz escolhida. Leva alguns minutos; o app mostra
+  quantas já estão prontas e avisa quando termina. Convém usar depois de instalar o
+  app e depois de trocar de voz pela primeira vez, porque uma voz nova começa com o
+  cache vazio. Se o leitor de telas falar no meio, a fala entra na fila normalmente.
+- O cache fica no próprio app. Apagar os dados do app limpa o cache.
+
+## Modo de fala
+
+- **Início rápido**: começa a falar na hora, mas pode engasgar em celular lento.
+- **Automático** (recomendado): espera só o necessário.
+- **Sem engasgos**: espera a frase inteira ficar pronta.
+
+## Reserva de áudio no começo da fala
+
+Guarda um pouco de áudio antes de começar a falar uma frase que o motor acabou de
+gerar, para o som não dar pausinhas no começo da frase, depois de uma vírgula ou
+quando você varre a tela cortando a fala anterior. As opções são Nenhuma, Pequena
+(100 ms), Média (200 ms, a recomendada) e Grande (350 ms). Só vale no modo
+Automático. Mais reserva dá menos pausas, mas a voz demora um pouquinho mais para
+começar (o motor gera mais rápido do que a voz fala, então a espera de verdade é
+bem menor que a reserva). Frases que já estão no cache não precisam dela.
+
+## Núcleos de processamento
+
+Automático usa até 4 núcleos grandes do processador. Se a voz ficar lenta, tente
+mais núcleos; se o celular esquentar ou a fala engasgar, tente menos. Só vale
+depois de fechar o app e forçar a parada do serviço de voz.
+
+## Teste
+
+Digite um texto, toque em "Falar teste" e ouça. "Parar" interrompe. O teste usa
+velocidade e tom normais do Android.
+
+## Atualizações
+
+- **Verificar atualizações**: pergunta ao GitHub se existe uma versão mais nova. O app diz
+  "Você está com a versão mais nova", ou "Versão tal disponível" e mostra o que mudou.
+- **Baixar e instalar**: aparece quando há versão nova. O app diz a porcentagem do
+  download de 10 em 10 e, depois de alguns segundos, quanto tempo falta. Se a conexão
+  cair, ele tenta de novo até cinco vezes e continua de onde parou. Se mesmo assim
+  falhar, toque no botão de novo: o download continua do ponto em que ficou.
+- Na **primeira vez**, o Android abre a tela que permite ao app instalar outros apps.
+  Ligue a opção, volte ao app e toque em "Baixar e instalar" de novo.
+- Quando o download termina, o app confere que o arquivo é uma versão **deste app**
+  (mesmo pacote, versão mais nova, mesmo certificado). Se não for, ele não instala e
+  avisa. Depois abre a instalação do Android. Toque em Atualizar ou Instalar. Se a tela
+  da instalação não abrir, toque na notificação "Atualização baixada".
+- Os seus ajustes e as frases já guardadas continuam depois da atualização.
+- **Procurar atualizações sozinho, uma vez por dia**: ligado, o app olha uma vez por
+  dia e avisa por notificação, uma vez por versão. No Android 13 ou mais novo, é
+  preciso permitir as notificações do app. Desligado, o app só procura quando você
+  toca em "Verificar atualizações".
+
+# Se algo der errado
+
+- **Não fala nada**: abra o app e leia a mensagem no topo ("Voz pronta" ou o erro).
+  Na primeira vez o app prepara o modelo, e leva alguns segundos.
+- **Fala devagar ou rápido demais com o TalkBack**: veja "Última fala" na tela de
+  ajustes. Se o TalkBack pede 90, a voz sai a 0,90x. Ajuste a velocidade do app, ou
+  desligue "Seguir a velocidade do Android".
+- **A voz não mudou depois de escolher outra**: veja em "Última fala" qual voz foi
+  usada. Se o leitor de telas não estiver usando o mecanismo Vozes Coisas de Cego,
+  ele não muda; confira em Ajustes, Texto para fala.
+- **Paradinhas no áudio**: tente o modo "Sem engasgos", ou menos núcleos.
+- **Palavra mal pronunciada**: acrescente no dicionário de pronúncias.
+- **Emoji com nome estranho**: troque no dicionário.
+
+# Licença e créditos
+
+O código é MIT. O modelo de voz é de uso não comercial (CC BY-NC 4.0). As vozes
+são clones criados no Gradium Studio: a do Michel e a da Meriellen, dona do projeto
+Coisas de Cego. Usar uma dessas vozes para se passar por quem ela é, ou para enganar
+alguém, não é permitido. Os nomes de emoji vêm do CLDR da Unicode. Detalhes no
+arquivo THIRD_PARTY.md do repositório.

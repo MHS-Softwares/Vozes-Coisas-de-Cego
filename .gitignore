@@ -1,0 +1,15 @@
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+.idea/
+.kotlin/
+*.apk
+
+# Material de terceiros e a voz do autor: ficam so no APK da Release, nunca no historico do Git
+# (veja THIRD_PARTY.md e o README, "Como compilar")
+app/src/main/assets/model/
+app/src/main/jniLibs/
+_origem/
+apk/
